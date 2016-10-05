@@ -49,7 +49,7 @@ C header file, like this::
 
         void order_spam(int tons)
 
-The ``cdef extern`` from clause does three things:
+The ``cdef extern from`` clause does three things:
 
 1. It directs Cython to place a ``#include`` statement for the named header file in
    the generated C code.  
@@ -333,7 +333,7 @@ declarations.
 
     You do not need to use either of these to make declarations from one
     Cython module available to another Cython module – you should use the
-    :keyword:`cimport` statement for that. Sharing Declarations Between Cython Modules.
+    :keyword:`cimport` statement for that, see :ref:`sharing-declarations`.
 
 Public Declarations
 ---------------------
